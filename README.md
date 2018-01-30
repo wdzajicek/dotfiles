@@ -9,3 +9,7 @@ Attempting to backup my mac setup
 `$ sh brew.sh`
 
 `$ sh brew-cask.sh`
+
+## Overview of files
+
+`.gitignore` - Start of a basic .gitignore to ignore default mac items like .DS_Store, etc.
