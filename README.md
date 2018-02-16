@@ -14,6 +14,12 @@ Backup of mac development setup
 
 `$ sh brew-cask.sh`
 
+## To copy bash_profile, aliases, and functions:
+
+`$ cd repositories/dotfiles`
+
+`$ sh dotfiles.sh`
+
 ## Overview of files
 
 ### Git
@@ -41,4 +47,3 @@ Rename `Brew-ha-ha-file` to `Brewfile`
 ### Vim
 
   .vim/ and .vimrc borrowed from paulirish
-  
