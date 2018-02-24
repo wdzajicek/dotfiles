@@ -48,7 +48,9 @@ Rename `Brew-ha-ha-file` to `Brewfile`
 
   .vim/ and .vimrc borrowed from paulirish
 
-### windows/ -DANGER-
+### Windows/ dotfiles
+
+## - DANGER ZONE -
 
   Dotfiles setup for use on Windows 10
 
