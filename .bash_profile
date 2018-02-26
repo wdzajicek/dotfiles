@@ -3,10 +3,13 @@
 
 export PATH="/usr/local/opt/gettext/bin:$PATH"
 
-for file in ~/.{path,bash_prompt,aliases,functions}; do
+for file in ~/.{path,bash_prompt,exports,aliases,functions}; do
 	[ -r "$file" ] && [ -f "$file" ] && source "$file";
 done;
 unset file;
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 
 # z beats cd most of the time. `brew install z`
 zpath="$(brew --prefix)/etc/profile.d/z.sh"
