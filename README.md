@@ -47,6 +47,3 @@ Rename `Brew-ha-ha-file` to `Brewfile`
 ### Vim
 
   .vim/ and .vimrc borrowed from paulirish
-
-  test
-  
