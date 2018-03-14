@@ -13,128 +13,131 @@ brew tap Homebrew/bundle
 #Install brew-cask
 brew tap caskroom/cask
 
-echo "Install stuff"
+# Install Homebrew Bundle to be able to install brews from Brewfile
+brew tap Homebrew/bundle
+
+echo "Installing stuff"
 
 brew install autoconf
 
-echo "Install stuff"
+echo "Installing stuff"
 
 brew install automake
 
-echo "Install stuff"
+echo "Installing stuff"
 
 brew install phantomjs
 
-echo "Install stuff"
+echo "Installing stuff"
 
 brew install casperjs
 
-echo "Install stuff"
+echo "Installing stuff"
 
 brew install coreutils
 
-echo "Install stuff"
+echo "Installing stuff"
 
 brew install cowsay
 
-echo "Install stuff"
+echo "Installing stuff"
 
 brew install curl
 
-echo "Install stuff"
+echo "Installing stuff"
 
 brew install fondu
 
-echo "Install stuff"
+echo "Installing stuff"
 
 brew install fzf
 
-echo "Install stuff"
+echo "Installing stuff"
 
 brew install gflags
 
-echo "Install stuff"
+echo "Installing stuff"
 
 brew install glog
 
-echo "Install stuff"
+echo "Installing stuff"
 
 brew install gnupg
 
-echo "Install stuff"
+echo "Installing stuff"
 
 brew install readline
 
-echo "Install stuff"
+echo "Installing stuff"
 
 brew install googler
 
-echo "Install stuff"
+echo "Installing stuff"
 
 brew install szip
 
-echo "Install stuff"
+echo "Installing stuff"
 
 brew install hdf5
 
-echo "Install stuff"
+echo "Installing stuff"
 
 brew install snappy
 
-echo "Install stuff"
+echo "Installing stuff"
 
 brew install leveldb
 
-echo "Install stuff"
+echo "Installing stuff"
 
 brew install libtool
 
-echo "Install stuff"
+echo "Installing stuff"
 
 brew install libyaml
 
-echo "Install stuff"
+echo "Installing stuff"
 
 brew install lmdb
 
-echo "Install stuff"
+echo "Installing stuff"
 
 brew install mas
 
-echo "Install stuff"
+echo "Installing stuff"
 
 brew install ninvaders
 
-echo "Install stuff"
+echo "Installing stuff"
 
 brew install node, link: false
 
-echo "Install stuff"
+echo "Installing stuff"
 
 brew install python
 
-echo "Install stuff"
+echo "Installing stuff"
 
 brew install opencv
 
-echo "Install stuff"
+echo "Installing stuff"
 
 brew install pkg-config
 
-echo "Install stuff"
+echo "Installing stuff"
 
 brew install protobuf
 
-echo "Install stuff"
+echo "Installing stuff"
 
 brew install the_silver_searcher
 
-echo "Install stuff"
+echo "Installing stuff"
 
 brew install wget
 
-echo "Install wget"
+echo "Installing wget"
 
 brew install z
 
-echo "Install stuff"
+echo "Installing stuff"
