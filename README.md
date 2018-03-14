@@ -32,6 +32,8 @@ Backup of mac development setup + My Bash on Ubuntu on Windows 10 customized dot
 
 To restore Homebrew packages:
 
+`$ sh brew-bundle.sh`
+
 Rename `Brew-ha-ha-file` to `Brewfile`
 
 `$ cd ~/dotfiles` run `$ brew bundle`
