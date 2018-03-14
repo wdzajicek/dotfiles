@@ -48,6 +48,10 @@ Rename `Brew-ha-ha-file` to `Brewfile`
 
   .vim/ and .vimrc borrowed from paulirish
 
+### ~/Library/Preferences/com.googlecode.iterm2.plist
+
+Plist file for iterm2 preferences & profile settings.  For future reference, this folder structure replicates the mac folder structure of where the file should be placed.
+
 ### Windows/ dotfiles
 
 ## - DANGER ZONE -
