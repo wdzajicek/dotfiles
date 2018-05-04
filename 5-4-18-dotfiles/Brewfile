@@ -1,0 +1,45 @@
+tap "caskroom/cask"
+tap "homebrew/bundle"
+tap "homebrew/core"
+tap "homebrew/science"
+brew "autoconf"
+brew "automake"
+brew "phantomjs"
+brew "casperjs"
+brew "coreutils"
+brew "cowsay"
+brew "curl"
+brew "ffmpeg", args: ["with-libass", "with-libvorbis", "with-libvpx", "with-openssl", "with-theora"]
+brew "fondu"
+brew "fzf"
+brew "gflags"
+brew "glog"
+brew "gnupg"
+brew "pkg-config"
+brew "readline"
+brew "python"
+brew "googler"
+brew "szip"
+brew "hdf5"
+brew "snappy"
+brew "leveldb"
+brew "libtool"
+brew "libvpx"
+brew "libyaml"
+brew "lmdb"
+brew "mas"
+brew "ninvaders"
+brew "node", link: false
+brew "opencv"
+brew "protobuf"
+brew "the_silver_searcher"
+brew "wget"
+brew "yarn"
+brew "z"
+mas "iMovie", id: 408981434
+mas "Install macOS High Sierra", id: 0
+mas "Just Color Picker", id: 886547068
+mas "Keynote", id: 409183694
+mas "Numbers", id: 409203825
+mas "Pages", id: 409201541
+mas "Xcode", id: 497799835
