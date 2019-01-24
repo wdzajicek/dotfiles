@@ -1,38 +1,49 @@
 #!/usr/bin/env bash
 
-while true; do
-    read -p "This will overwrite files in ~/repositories/dotfiles/latest/. Do you wish to continue? Y/N: " yn
-    case $yn in
-        [Yy]* ) echo 'Copying latest dotfiles'
+echo 'Copying latest dotfiles'
 
-        sleep .5
+d=$(date +%Y-%m-%d)
 
-        echo 'Copying .bash_profile'
+echo 'Creating dir: ~/repositories/dotfiles/latest/"$d"/'
 
-        cp ~/.bash_profile ~/repositories/dotfiles/latest/.bash_profile
+sleep .5
 
-        sleep .5
+mkdir -p ~/repositories/dotfiles/latest/$d/
 
-        echo 'Copying .bash_prompt'
+sleep .5
 
-        cp ~/.bash_prompt ~/repositories/dotfiles/latest/.bash_prompt
+echo 'Copying .bash_profile'
 
-        sleep .5
+cp ~/.bash_profile ~/repositories/dotfiles/latest/$d/.bash_profile
 
-        echo 'Copying .aliases'
+sleep .5
 
-        cp ~/.aliases ~/repositories/dotfiles/latest/.aliases
+echo 'Copying .bash_prompt'
 
-        sleep .5
+cp ~/.bash_prompt ~/repositories/dotfiles/latest/$d/.bash_prompt
 
-        echo 'Copying .bashrc'
+sleep .5
 
-        cp ~/.bashrc ~/repositories/dotfiles/latest/.bashrc
+echo 'Copying .aliases'
 
-        sleep .5
+cp ~/.aliases ~/repositories/dotfiles/latest/$d/.aliases
 
-        echo 'Dotfile update complete'; break;;
-        [Nn]* ) exit;;
-        * ) echo "Please answer yes or no.";;
-    esac
-done
+sleep .5
+
+echo 'Copying .bashrc'
+
+cp ~/.bashrc ~/repositories/dotfiles/latest/$d/.bashrc
+
+sleep .5
+
+echo 'Copying .vimrc'
+
+cp ~/.vimrc ~/repositories/dotfiles/latest/$d/.vimrc
+
+sleep .5
+
+echo 'Copying .profile'
+
+cp ~/.vimrc ~/repositories/dotfiles/latest/$d/.profile
+
+echo 'Dotfile update complete'
