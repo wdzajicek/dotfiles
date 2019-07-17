@@ -4,7 +4,7 @@ echo 'Copying latest dotfiles'
 
 d=$(date +%Y-%m-%d)
 
-echo 'Creating dir: ~/repositories/dotfiles/latest/"$d"/'
+echo 'Creating dir: ~/repositories/dotfiles/latest/$d/'
 
 sleep .5
 
