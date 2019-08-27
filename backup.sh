@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/sh
 
 echo 'Backing up latest dotfiles from this machine'
 
@@ -57,5 +57,59 @@ sleep .5
 echo 'Copying .profile'
 
 cp ~/.vimrc ~/repositories/dotfiles/latest/$d/.profile
+
+sleep .5
+
+echo 'Creating environment_versions.txt'
+
+echo "#### RVM ####" > ~/repositories/dotfiles/latest/$d/environment_versions.txt
+
+echo "" >> ~/repositories/dotfiles/latest/$d/environment_versions.txt
+
+rvm list >> ~/repositories/dotfiles/latest/$d/environment_versions.txt
+
+echo "" >> ~/repositories/dotfiles/latest/$d/environment_versions.txt
+
+echo "" >> ~/repositories/dotfiles/latest/$d/environment_versions.txt
+
+echo "#### Ruby ####" >> ~/repositories/dotfiles/latest/$d/environment_versions.txt
+
+echo "" >> ~/repositories/dotfiles/latest/$d/environment_versions.txt
+
+ruby -v >> ~/repositories/dotfiles/latest/$d/environment_versions.txt
+
+echo "" >> ~/repositories/dotfiles/latest/$d/environment_versions.txt
+
+echo "" >> ~/repositories/dotfiles/latest/$d/environment_versions.txt
+
+echo "#### NVM ####" >> ~/repositories/dotfiles/latest/$d/environment_versions.txt
+
+echo "" >> ~/repositories/dotfiles/latest/$d/environment_versions.txt
+
+nvm ls >> ~/repositories/dotfiles/latest/$d/environment_versions.txt
+
+echo "" >> ~/repositories/dotfiles/latest/$d/environment_versions.txt
+
+echo "" >> ~/repositories/dotfiles/latest/$d/environment_versions.txt
+
+echo "#### Node ####" >> ~/repositories/dotfiles/latest/$d/environment_versions.txt
+
+echo "" >> ~/repositories/dotfiles/latest/$d/environment_versions.txt
+
+node -v >> ~/repositories/dotfiles/latest/$d/environment_versions.txt
+
+echo "" >> ~/repositories/dotfiles/latest/$d/environment_versions.txt
+
+echo "" >> ~/repositories/dotfiles/latest/$d/environment_versions.txt
+
+echo "#### NPM ####" >> ~/repositories/dotfiles/latest/$d/environment_versions.txt
+
+echo "" >> ~/repositories/dotfiles/latest/$d/environment_versions.txt
+
+npm -v >> ~/repositories/dotfiles/latest/$d/environment_versions.txt
+
+echo "" >> ~/repositories/dotfiles/latest/$d/environment_versions.txt
+
+echo "" >> ~/repositories/dotfiles/latest/$d/environment_versions.txt
 
 echo 'Dotfile update complete'

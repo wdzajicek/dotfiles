@@ -1,0 +1,61 @@
+# vim as default
+export EDITOR="vim"
+
+# Enable persistent REPL history for `node`.
+NODE_REPL_HISTORY_FILE=~/.node_history;
+# Allow 32³ entries; the default is 1000.
+NODE_REPL_HISTORY_SIZE='32768';
+
+# Increase Bash history size. Allow 32³ entries; the default is 500.
+export HISTSIZE='32768';
+export HISTFILESIZE="${HISTSIZE}";
+# Omit duplicates and commands that begin with a space from history.
+export HISTCONTROL='ignoreboth';
+
+# Prefer US English and use UTF-8.
+export LANG='en_US.UTF-8';
+export LC_ALL='en_US.UTF-8';
+
+# Highlight section titles in manual pages.
+export LESS_TERMCAP_md="${yellow}";
+
+# Don’t clear the screen after quitting a manual page.
+export MANPAGER='less -X';
+
+# Always enable colored `grep` output.
+export GREP_OPTIONS='--color=auto';
+
+# Exports
+export PATH=$PATH:/usr/local/bin
+export PATH=$PATH:/Users/mediastudent/.npm-packages/lib/node_modules:/home//.npm-packages/lib/node_modules
+
+export PATH=$PATH:/Users/mediastudent/.npm-packages/bin
+export PATH=$PATH:/Users/mediastudent/npm/bin
+# VMware Fusion
+if [ -d "/Applications/VMware Fusion.app/Contents/Library" ]; then
+    export PATH=$PATH:"/Applications/VMware Fusion.app/Contents/Library"
+fi
+
+# added by Anaconda3 5.3.1 installer
+# >>> conda init >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$(CONDA_REPORT_ERRORS=false '/anaconda3/bin/conda' shell.bash hook 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    \eval "$__conda_setup"
+else
+    if [ -f "/anaconda3/etc/profile.d/conda.sh" ]; then
+        . "/anaconda3/etc/profile.d/conda.sh"
+        CONDA_CHANGEPS1=false conda activate base
+    else
+        \export PATH="/anaconda3/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda init <<<
+
+export PATH="/usr/local/opt/gettext/bin:$PATH"
+
+# MacPorts Installer addition on 2017-12-14_at_16:42:37: adding an appropriate PATH variable for use with MacPorts.
+export PATH="/opt/local/bin:/opt/local/sbin:$PATH"
+
+export NVM_DIR="$HOME/.nvm"

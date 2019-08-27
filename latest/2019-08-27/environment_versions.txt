@@ -1,0 +1,29 @@
+#### RVM ####
+
+=* ruby-2.5.0 [ x86_64 ]
+
+# => - current
+# =* - current && default
+#  * - default
+
+
+
+#### Ruby ####
+
+ruby 2.5.0p0 (2017-12-25 revision 61468) [x86_64-darwin16]
+
+
+#### NVM ####
+
+
+
+#### Node ####
+
+v10.15.3
+
+
+#### NPM ####
+
+6.10.0
+
+
