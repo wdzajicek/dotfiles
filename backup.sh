@@ -4,7 +4,7 @@ echo 'Backing up latest dotfiles from this machine'
 
 d=$(date +%Y-%m-%d)
 
-echo 'Creating dir: ~/repositories/dotfiles/latest/$d/'
+echo 'Creating dir: ~/repositories/dotfiles/latest/${d}/'
 
 sleep .5
 
@@ -27,6 +27,18 @@ sleep .5
 echo 'Copying .aliases'
 
 cp ~/.aliases ~/repositories/dotfiles/latest/$d/.aliases
+
+sleep .5
+
+echo 'Copying .exports'
+
+cp ~/.exports ~/repositories/dotfiles/latest/$d/.exports
+
+sleep .5
+
+echo 'Copying .functions'
+
+cp ~/.functions ~/repositories/dotfiles/latest/$d/.functions
 
 sleep .5
 
