@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-echo 'Copying latest dotfiles'
+echo 'Backing up latest dotfiles from this machine'
 
 d=$(date +%Y-%m-%d)
 
