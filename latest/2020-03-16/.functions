@@ -1,0 +1,97 @@
+## Functions
+
+## Use a local .nvmrc file if present # from https://stackoverflow.com/a/48322289
+enter_directory() {
+  if [[ $PWD == $PREV_PWD ]]; then
+    return
+  fi
+
+  PREV_PWD=$PWD
+  [[ -f ".nvmrc" ]] && nvm use > /dev/null 2>&1 && nvm use | cowsay $n
+}
+
+export PROMPT_COMMAND=enter_directory
+
+## My Greeting
+why_hello_there() {
+echo "__/\\\\\\______________/\\\\\\______________________________/\\\\\\\\\\\\_________________________________        "
+echo " _\\/\\\\\\_____________\\/\\\\\\_____________________________\\////\\\\\\_________________________________       "
+echo "  _\\/\\\\\\_____________\\/\\\\\\________________________________\\/\\\\\\______________________/\\\\\\__/\\\\\\_      "
+echo "   _\\//\\\\\\____/\\\\\\____/\\\\\\______/\\\\\\\\\\\\\\\\___/\\\\\\\\\\\\\\\\\\\\____\\/\\\\\\________/\\\\\\\\\\\\\\\\____\\//\\\\\\/\\\\\\__     "
+echo "    __\\//\\\\\\__/\\\\\\\\\\__/\\\\\\_____/\\\\\\/////\\\\\\_\\/\\\\\\//////_____\\/\\\\\\______/\\\\\\/////\\\\\\____\\//\\\\\\\\\\___    "
+echo "     ___\\//\\\\\\/\\\\\\/\\\\\\/\\\\\\_____/\\\\\\\\\\\\\\\\\\\\\\__\\/\\\\\\\\\\\\\\\\\\\\____\\/\\\\\\_____/\\\\\\\\\\\\\\\\\\\\\\______\\//\\\\\\____   "
+echo "      ____\\//\\\\\\\\\\\\//\\\\\\\\\\_____\\//\\\\///////___\\////////\\\\\\____\\/\\\\\\____\\//\\\\///////____/\\\\_/\\\\\\_____  "
+echo "       _____\\//\\\\\\__\\//\\\\\\_______\\//\\\\\\\\\\\\\\\\\\\\__/\\\\\\\\\\\\\\\\\\\\__/\\\\\\\\\\\\\\\\\\__\\//\\\\\\\\\\\\\\\\\\\\_\\//\\\\\\\\/______ "
+echo "        ______\\///____\\///_________\\//////////__\\//////////__\\/////////____\\//////////___\\////________"
+}
+
+why_hello_there
+
+colors_off() {
+  PS1="\[\033]0;\W\007\]"; # working directory base name
+  PS1+="\[${bold}\]\n"; # newline
+  PS1+="\[${userStyle}\]wdzajicek"; # username
+  PS1+="\[${white}\] at ";
+  PS1+="\[${hostStyle}\]\h"; # host
+  PS1+="\[${white}\] in ";
+  PS1+="\[${green}\]\w"; # working directory full path
+  PS1+="\$(prompt_git \"\[${white}\] on \[${violet}\]\" \"\[${blue}\]\")"; # Git repository details
+  PS1+="\n";
+  PS1+="\[${white}\]\$ \[${reset}\]"; # `$` (and reset color)
+  export PS1;
+
+  PS2="\[${yellow}\]→ \[${reset}\]";
+  export PS2;
+}
+
+gay_rainbow() {
+  PS1="\[\033]0;\W\007\]"; # working directory base name
+  PS1+="\[${bold}\]\n"; # newline
+  PS1+="\[${userStyle}\]🌈wdzajicek"; # username
+  PS1+="\[${white}\] at ";
+  PS1+="\[${hostStyle}\]\h"; # host
+  PS1+="\[${white}\] in ";
+  PS1+="\[${green}\]\w"; # working directory full path
+  PS1+="\$(prompt_git \"\[${white}\] on \[${violet}\]\" \"\[${blue}\]\")"; # Git repository details
+  PS1+="\n";
+  PS1+="\[${white}\]\$ \[${reset}\]"; # `$` (and reset color)
+  export PS1;
+
+  PS2="\[${yellow}\]→ \[${reset}\]";
+  export PS2;
+}
+
+fr(){
+  echo "Did you mean 'For real'?"
+}
+
+dir() {
+  if [ -z "$1" ]
+  then
+    ls -la
+  else
+    cd $1
+  fi
+}
+
+bon () {
+  if [ -z "$1" ]
+  then
+    echo "bon"
+  else
+    echo "bon $1"
+  fi
+}
+
+For() {
+  if [ -z "$1" ]
+  then
+    echo "For what?"
+  else
+    echo "Yes, really for $1"
+  fi
+}
+
+k() {
+  cd ~/repositories/kcc-gem-theme/
+}
