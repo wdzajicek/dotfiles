@@ -1,0 +1,39 @@
+// Custom settings file for vscode
+// Place this file in ~/Library/Application Support/Code/User/
+{
+  "editor.suggestSelection": "first",
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "workbench.colorTheme": "One Dark Pro",
+  "workbench.colorCustomizations": {
+    "editor.background": "#1a1f24",
+    "sash.hoverBorder": "#9f9f9f"
+  },
+  "atomKeymap.promptV3Features": true,
+  "editor.multiCursorModifier": "ctrlCmd",
+  "editor.formatOnType": true,
+  "editor.dragAndDrop": false,
+  "editor.tabSize": 2,
+  "editor.detectIndentation": false,
+  "explorer.confirmDelete": false,
+  "workbench.iconTheme": "vscode-icons",
+  "workbench.startupEditor": "newUntitledFile",
+  "window.zoomLevel": 1,
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[markdown]": {
+    "editor.quickSuggestions": true,
+    "editor.wordBasedSuggestions": false,
+    "editor.suggest.showSnippets": true,
+    "editor.suggest.snippetsPreventQuickSuggestions": true,
+    "editor.snippetSuggestions": "top"
+  },
+  "explorer.enableDragAndDrop": false,
+  "explorer.autoReveal": "focusNoScroll",
+  "editor.renderWhitespace": "all",
+  "html.format.endWithNewline": true,
+  "html.format.wrapAttributes": "force-expand-multiline",
+  "html.format.indentInnerHtml": true,
+  "editor.formatOnSave": true,
+  "html.format.templating": false
+}
